@@ -27,15 +27,14 @@ else
 
 
 
+var total = prompt("What is the subtotal of the bill?")
 
+var tip = prompt("Percentage tip given to waiters (0 - 100)?")
 
+total = (1 + (tip / 100)) * (total)
+document.getElementById("b").innerHTML = "Total Bill: $" + total
 
-
-
-
-
-
-
+ 
 function palindrome(input) {
     var palindrome = 1
     var j = input.length - 1
