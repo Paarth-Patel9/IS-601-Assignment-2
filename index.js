@@ -26,12 +26,12 @@ else
 
 
 var total = prompt("What is the subtotal of the bill?")
-if(total < 0)
-    total*=-1
+while(total < 0)
+    total = prompt("Re-enter non-negative subtotal of the bill?") 
 
 var tip = prompt("Percentage tip given to waiters (0 - 100)?")
-if(tip < 0)
-    tip*=-1
+while(tip < 0)
+    tip = prompt("Re-enter non-negative tip given to waiters (0 - 100)?")
 
 total = (1 + (tip / 100)) * (total)
 total = Math.round(total * 10 ** 2) / 10 ** 2
