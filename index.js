@@ -13,7 +13,7 @@ for(var i = 0; i < input.length; i++) {
 }
 
 document.getElementById("vc").innerHTML = "The number of vowels: " + vowels + ". \nThe number of consonants: " + cons + ".";
-
+ 
 
 input = prompt("Enter a series of numbers:")
 
