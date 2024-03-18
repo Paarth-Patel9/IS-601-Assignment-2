@@ -12,4 +12,4 @@ for(var i = 0; i < input.length; i++) {
         cons += 1
 }
 
-window.alert("Number of vowels are " + vowels + "\n" + "Number of consonants are " + cons)
+alert("Number of vowels are " + vowels + "\n" + "Number of consonants are " + cons)
