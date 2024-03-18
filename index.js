@@ -1,7 +1,7 @@
 var vowels = 0
 var cons = 0
 var input = prompt("Enter a string:")
-input = input.toLocaleLowerCase().trim()
+input = input.toLocaleLowerCase()
 
 for(var i = 0; i < input.length; i++) {
     if(input[i] === 'a'|| input[i] === 'e' || input[i] === 'i' || input[i] === 'o' || input[i] === 'u' || input[i] === 'a')
@@ -16,7 +16,7 @@ document.getElementById("vc").innerHTML = "The number of vowels: " + vowels + ".
  
 
 input = prompt("Enter a series of numbers:")
-
+input = input.trim()
 var pal = palindrome(input)
 
 if(pal == 0)
