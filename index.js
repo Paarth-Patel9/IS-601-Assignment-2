@@ -12,4 +12,4 @@ for(var i = 0; i < input.length; i++) {
         cons += 1
 }
 
-document.getElementById("vc").innerHTML = "Vowels: " + vowels + " cons: " + cons;
+document.getElementById("vc").innerHTML = "The number of vowels: " + vowels + ". \nThe number of consonants: " + cons + ".";
