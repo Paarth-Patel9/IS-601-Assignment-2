@@ -43,5 +43,5 @@ function palindrome(input) {
             break
         }
     }
-    return p
+    return palindrome
 }
