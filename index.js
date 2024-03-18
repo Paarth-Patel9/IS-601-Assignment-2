@@ -16,17 +16,34 @@ document.getElementById("vc").innerHTML = "The number of vowels: " + vowels + ".
 
 
 input = prompt("Enter a series of numbers:")
-var j = input.length - 1
-var palindrome = 1
-for(i = 0; i < input.length && j >= 0; i++,j--) {
-    if(input[i] !== input[j]) {
-        palindrome = 0
-        break
-    }
-}
 
-if(palindrome == 0)
+var pal = palindrome(input)
+
+if(pal == 0)
     document.getElementById("p").innerHTML = "Not a palindrome."
 else
     document.getElementById("p").innerHTML = "A palindrome."
 
+
+
+
+
+
+
+
+
+
+
+
+
+function palindrome(input) {
+    var palindrome = 1
+    var j = input.length - 1
+    for(i = 0; i < input.length && j >= 0; i++,j--) {
+        if(input[i] !== input[j]) {
+            palindrome = 0
+            break
+        }
+    }
+    return p
+}
